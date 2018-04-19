@@ -1,11 +1,12 @@
 #include "cameraworker.h"
 
-#include "unistd.h"
 #include <fstream>
 #include <iostream>
 
 #include <QDebug>
 #include <QApplication>
+
+#include "unistd.h"
 
 CameraWorker::CameraWorker() : cameraRunning(true)
 {
@@ -20,7 +21,7 @@ CameraWorker::~CameraWorker()
 void CameraWorker::doWork()
 {
     // Open the camera
-    if(!camera.open()) {
+    if (!camera.open()) {
         qDebug() << "Error opening camera";
         cameraRunning = false;
     } else {
@@ -31,7 +32,7 @@ void CameraWorker::doWork()
     sleep(3);
 
     // While the camera is on (the user has clicked the button), capture
-    while(cameraRunning) {
+    while (cameraRunning) {
         // Capture
         camera.grab();
         camera.retrieve(data, RASPICAM_FORMAT_RGB);

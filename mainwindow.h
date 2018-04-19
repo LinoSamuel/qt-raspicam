@@ -83,7 +83,7 @@ private:
     /*!
      * \brief whether or not the camera is running.
      *
-     * Flag for the camera's state, so that the program doesn't try to start
+     * Flag for the camera's state so that the program doesn't try to start
      * the camera when it's already running.
      */
     bool cameraRunning;
