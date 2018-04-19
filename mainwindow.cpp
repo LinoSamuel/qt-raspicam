@@ -5,9 +5,7 @@
 
 #include <QPixmap>
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow),
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow),
     cameraRunning(false)
 {
     ui->setupUi(this);
