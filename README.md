@@ -1,10 +1,14 @@
-# Qt Raspicam
+# Qt Raspicam Demo
 
-This is a simple project that came from code I wrote while working at [Spin Analytical](http://spinanalytical.com/). It demonstrates how to use Qt to render live video from the Raspberry Pi camera with the [raspicam](https://github.com/cedricve/raspicam) library. Integrating Qt with the raspberry pi camera proved a bit challenging, so I thought it might be useful to share this code.
+This is a simple project that came from code I wrote while working at [Spin Analytical](http://spinanalytical.com/) on their Cell Alignment Tool (2016-2017). It uses the Qt framework to display live video from the Raspberry Pi camera with the [raspicam](https://github.com/cedricve/raspicam) library.
 
-## Prerequisites
-* Qt development libraries ([installation for raspbian](https://www.raspberrypi.org/forums/viewtopic.php?t=69163#p506401))
-* [raspicam](https://github.com/cedricve/raspicam)
+## Setup
+### Prerequisites
+1. Qt development libraries ([installation for raspbian](https://www.raspberrypi.org/forums/viewtopic.php?t=69163#p506401))
+2. [raspicam](https://github.com/cedricve/raspicam)
+### Building
+1. Download the source and navigate to its root directory.
+2. Run ``qmake`` to generate the project's makefile, then ``make`` to build.
 
 ## Files
 * `picam_live_preview.pro`: the Qt project file; make sure to add the two LIBS lines so that the raspicam library can work properly.
