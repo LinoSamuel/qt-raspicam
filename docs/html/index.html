@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Qt Raspicam: Qt Raspicam</title>
+<title>Qt Raspicam: Qt Raspicam Demo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,15 +64,21 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Qt Raspicam </div>  </div>
+<div class="title">Qt Raspicam Demo </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is a simple project that came from code I wrote while working at <a href="http://spinanalytical.com/">Spin Analytical</a>. It demonstrates how to use Qt to render live video from the Raspberry Pi camera with the <a href="https://github.com/cedricve/raspicam">raspicam</a> library. Integrating Qt with the raspberry pi camera proved a bit challenging, so I thought it might be useful to share this code.</p>
-<h2>Prerequisites</h2>
-<ul>
+<div class="textblock"><p>This is a simple project that came from code I wrote while working at <a href="http://spinanalytical.com/">Spin Analytical</a> on their Cell Alignment Tool (2016-2017). It uses the Qt framework to display live video from the Raspberry Pi camera with the <a href="https://github.com/cedricve/raspicam">raspicam</a> library.</p>
+<h2>Setup</h2>
+<h3>Prerequisites</h3>
+<ol type="1">
 <li>Qt development libraries (<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=69163#p506401">installation for raspbian</a>)</li>
-<li><a href="https://github.com/cedricve/raspicam">raspicam</a></li>
-</ul>
+<li><a href="https://github.com/cedricve/raspicam">raspicam</a> <h3>Building</h3>
+</li>
+</ol>
+<ol type="1">
+<li>Download the source and navigate to its root directory.</li>
+<li>Run <code>qmake</code> to generate the project's makefile, then <code>make</code> to build.</li>
+</ol>
 <h2>Files</h2>
 <ul>
 <li><code>picam_live_preview.pro</code>: the Qt project file; make sure to add the two LIBS lines so that the raspicam library can work properly.</li>
@@ -82,7 +88,7 @@ $(function() {
 <li><code><a class="el" href="cameraworker_8h.html">cameraworker.h</a></code>/<code><a class="el" href="cameraworker_8cpp.html">cameraworker.cpp</a></code>: the worker that grabs images from the camera and converts them to QImages which are displayed in the main window.</li>
 </ul>
 <h2>Documentation</h2>
-<p>TODO: link to Doxygen for this project. </p>
+<p>See <a href="https://brianjaustin.github.io/qt-raspicam/html/annotated.html">here</a> for Doxygen documentation. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

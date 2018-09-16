@@ -18,5 +18,4 @@ This is a simple project that came from code I wrote while working at [Spin Anal
 * `cameraworker.h`/`cameraworker.cpp`: the worker that grabs images from the camera and converts them to QImages which are displayed in the main window.
 
 ## Documentation
-TODO: link to Doxygen for this project.
-
+See [here](https://brianjaustin.github.io/qt-raspicam/html/annotated.html) for Doxygen documentation.
