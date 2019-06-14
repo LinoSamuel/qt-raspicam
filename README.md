@@ -2,6 +2,7 @@
 
 This is a simple project that came from code I wrote while working at [Spin Analytical](http://spinanalytical.com/) on their Cell Alignment Tool (2016-2017). It uses the Qt framework to display live video from the Raspberry Pi camera with the [raspicam](https://github.com/cedricve/raspicam) library.
 
+
 ## Setup
 ### Prerequisites
 1. Qt development libraries ([installation for raspbian](https://www.raspberrypi.org/forums/viewtopic.php?t=69163#p506401))
